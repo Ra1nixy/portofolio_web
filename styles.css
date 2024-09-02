@@ -202,3 +202,37 @@ footer {
 .contact-icons a:hover {
     color: #3498db; /* Warna saat di-hover */
 }
+@media (max-width: 453px) {
+    .container h1 {
+        display: none;
+    }
+    header nav ul li {
+        display: inline;
+        margin-left: 5px;
+        align-items: center;
+    }
+    .about-image {
+        flex: 1;
+        max-width: 100px;
+        text-align: justify;
+    }
+    
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 20%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+}
+@media ( max-width: 383px){
+    .container h1{
+        display: none;
+    }
+    header nav ul li {
+        display: inline;
+        margin-left: 2px;
+        align-items: center;
+        font-size: small;
+    }
+}
