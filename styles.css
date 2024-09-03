@@ -216,12 +216,22 @@ footer {
     background-color: #0056b3;
   }
   
-@media (max-width: 453px) {
+  @media (max-width: 453px) {
     .container h1 {
         display: none;
     }
+    header nav {
+        display: flex;
+        justify-content: center; /* Pusatkan elemen di dalam nav */
+    }
+    header nav ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
     header nav ul li {
-        display: inline;
+        display: inline-block;
         margin-left: 5px;
         align-items: center;
     }
@@ -237,11 +247,15 @@ footer {
         border-radius: 20%;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    
 }
+
 @media ( max-width: 383px){
     .container h1{
         display: none;
+    }
+    header nav {
+        display: flex;
+        justify-content: center; /* Pusatkan elemen di dalam nav */
     }
     header nav ul li {
         display: inline;
